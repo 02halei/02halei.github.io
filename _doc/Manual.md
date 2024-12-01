@@ -1,4 +1,4 @@
-Hux Blog User Manual
+02halei Blog User Manual
 ====================
 
 * Basics
@@ -53,13 +53,13 @@ You can easily customize the blog by modifying `_config.yml`:
 
 ```yml
 # Site settings
-title: Hux Blog             # title of your website
-SEOTitle: Hux Blog          # check out docs for more detail
+title: 02halei Blog             # title of your website
+SEOTitle: 02halei Blog          # check out docs for more detail
 description: "Cool Blog"    # ...
 
 # SNS settings      
-github_username: huxpro     # modify this account to yours
-weibo_username: huxpro      # the footer woule be auto-updated.
+github_username: 02halei    # modify this account to yours
+weibo_username: 02halei      # the footer woule be auto-updated.
 
 # Build settings
 paginate: 10                # nums of posts in one page
@@ -79,11 +79,11 @@ For instance, [Hello 2015])(https://huangxuan.me/2015/01/29/hello-2015/) has the
 ```yml
 ---
 layout:     post
-title:      "Hello 2015"
+title:      "Hello 2024"
 subtitle:   " \"Hello World, Hello Blog\""
-date:       2015-01-29 12:00:00
-author:     "Hux"
-header-img: "img/post-bg-2015.jpg"
+date:       2024-12-1
+author:     "02halei"
+header-img: "img/home.png"
 catalog: true
 tags:
     - Life
