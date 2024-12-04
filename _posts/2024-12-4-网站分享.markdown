@@ -1,1 +1,19 @@
+---
+layout:     post
+title:      "浏览器插件站"
+subtitle:   " \"网站分享, pc Blog\""
+date:       2024-12-4
+author:     "02halei"
+header-img: "img/home.png"
+catalog: true
+tags:
+    - 网站分享
+---
 
+> “今天分享一个十分实用的通用浏览器插件安装网站—Crx ”
+
+# 网站名称:Crx
+
+## 网站介绍
+### 网站链接
+[Crx](https://crxsoso.com)
