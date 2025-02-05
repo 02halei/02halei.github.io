@@ -1,4 +1,5 @@
-[https://space.bilibili.com/524530873?spm_id_from=333.1007.0.0](![Image](https://github.com/user-attachments/assets/ad05f22e-cf0f-4e9f-af84-89534743e8cd))
+b站主页[https://space.bilibili.com/524530873?spm_id_from=333.1007.0.0]
+(![Image](https://github.com/user-attachments/assets/ad05f22e-cf0f-4e9f-af84-89534743e8cd))
 
 # Hello 2025
 ## 我是一个up主
