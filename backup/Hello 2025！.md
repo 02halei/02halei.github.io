@@ -17,3 +17,4 @@
 **02halei记录于2025.2.5**
      _02halei=哈雷0V0_
 _每篇博客不代表最终结果，如有缺漏都会进行不定期完善_
+![Image](https://github.com/user-attachments/assets/eff5ce6b-686c-43dd-92f9-776fccea9e73)
