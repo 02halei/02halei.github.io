@@ -1,8 +1,5 @@
 [bilibili主页](https://space.bilibili.com/524530873?spm_id_from=333.1007.0.0)
-<https://space.bilibili.com/524530873?spm_id_from=333.1007.0.0>
-![Image](https://github.com/user-attachments/assets/c21f9a6b-453c-4bc9-bc8e-cf2da85d0b6b)
-
-
+![Image](https://github.com/user-attachments/assets/cb78864e-1d72-458a-91e6-dafa09ad4a33)
 # Hello 2025
 ## 我是一个up主
 ### 世界之大，人生只是昙花一现
