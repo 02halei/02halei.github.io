@@ -1,5 +1,4 @@
-[bilibili主页](https://space.bilibili.com/524530873?spm_id_from=333.1007.0.0)
-![Image](https://github.com/user-attachments/assets/cb78864e-1d72-458a-91e6-dafa09ad4a33)
+[![Image](https://github.com/user-attachments/assets/eff5ce6b-686c-43dd-92f9-776fccea9e73)](https://space.bilibili.com/524530873?spm_id_from=333.1007.0.0)
 # Hello 2025
 ## 我是一个up主
 ### 世界之大，人生只是昙花一现
@@ -14,4 +13,4 @@
 **02halei记录于2025.2.5**
      _02halei=哈雷0V0_
 _每篇博客不代表最终结果，如有缺漏都会进行不定期完善_
-![Image](https://github.com/user-attachments/assets/eff5ce6b-686c-43dd-92f9-776fccea9e73)
+![Image](https://github.com/user-attachments/assets/cb78864e-1d72-458a-91e6-dafa09ad4a33)
