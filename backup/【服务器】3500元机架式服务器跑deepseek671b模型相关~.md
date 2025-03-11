@@ -6,4 +6,10 @@
 * 浪潮 (Inspur)SA5212M5双路2U服务器
 **淘宝950¥**
 * DDR4 ECC 服务器内存2666MHz（两颗CPU共能上12根）
+> 因为CPU功耗为210W，主板供电205W，所以需要如视频解锁功耗墙！
 # [可参照视频](https://www.bilibili.com/video/BV1YEPvepEvf/?spm_id_from=333.337.search-card.all.click)
+## 视频刷机包
+浪潮解锁大功率刷机板驱动以及刷机程序包：
+百度网盘
+https://pan.baidu.com/s/1ZTUDP7e7YJT8pFWjq2HPow?pwd=dkqc
+提取码: dkqc
