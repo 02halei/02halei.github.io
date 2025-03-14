@@ -6,7 +6,8 @@
 #10 
 * 下载[ollama](https://ollama.com/)并运行安装程序。
 * win+R打开cmd，输入命令下载模型。
-> 注意ollama默认下载在C盘，模型同样，请确保C盘空间足够！
+> 注意ollama默认下载在C盘，模型同样，请确保C盘空间足够！如需更改磁盘请参考文章：
+#12 
 命令如下：
 ollama run deepseek-r1:671b
 > 671b可自行更改为deepseek模型版本如70b，32b，14b，8b，4b，1.5b。
