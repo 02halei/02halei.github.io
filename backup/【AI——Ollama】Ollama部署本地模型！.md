@@ -51,10 +51,11 @@ ollama pull deepseek-r1:1.5b
 ollama run deepseek-r1:1.5b
 ```
 在 >>> 后输入 你好， 即可聊天
+
+结束对话，退出.  或 ctrl + d 退出.
 ```
 /bye
 ```  
-表示结束对话，退出.   ctrl + d 也可以退出.
 ***
 ### 查看更多相关命令
 ```
