@@ -12,15 +12,21 @@
 * win + r  弹出窗口
 * 输入 cmd  后， ctrl + shift + 回车
 * 切换到 d 盘，添加系统环境变量
-* d:  回车
-* setx  OLLAMA_MODELS   d:\ollama  /M
+```
+ d: 
+ setx OLLAMA_MODELS  d:\ollama /M
+```
 * 切换到 ollama 目录，清屏（cls），安装ollama程序并指定目录
-* cd  ollama
-* cls
-* ollamaSetup.exe   /dir=d:\ollama
+```
+cd ollama
+cls
+ollamaSetup.exe  /dir=d:\ollama
+```
 在弹出的安装界面中，点 Install 后， 等待完成
-**关闭原来的 CMD，打开一个新的 CMD，查看ollama是否安装成功**（以确保配置成功！不然模型将无法正常下载到d盘！）
-* ollama  -v
+**关闭原来的 CMD，打开一个新的 CMD，查看ollama是否安装成功**（以确保配置成功！不然模型将无法正常下载到d盘！
+```
+ollama -v
+```
 ***
 ## 部署模型
 下载、运行大模型
@@ -30,16 +36,31 @@ https://ollama.com
 找到模型后，查看详情
 选择想要的大小尺寸，复制右侧的命令
 回到 CMD 窗口，粘贴命令，修改命令
-* 原命令   ollama  run   deepseek-r1:1.5b
-* 新命令   ollama  pull  deepseek-r1:1.5b（将模型下载到本地）
+* 原命令  
+```
+ollama run deepseek-r1:1.5b
+```
+* 新命令 
+```
+ollama pull deepseek-r1:1.5b
+```
+（将模型下载到本地）
 > (下载速度变慢，可以 ctrl+c 中断，过一会再执行 ollama pull deepseek-r1:1.5b, 将会接着上一次的进度进行拉取下载)
 ***
 ## 运行大模型
-* ollama  run  deepseek-r1:1.5b
+```
+ollama run deepseek-r1:1.5b
+```
 在 >>> 后输入 你好， 即可聊天
-/bye  表示结束对话，退出.   ctrl + d 也可以退出.
+```
+/bye
+```  
+表示结束对话，退出.   ctrl + d 也可以退出.
 ***
-### ollama  -h   可以查看更多相关命令
+### 查看更多相关命令
+```
+ollama -h  
+``` 
 ***
 # UI界面
 > 使用ChatBox软件，地址：https://chatboxai.app/zh
