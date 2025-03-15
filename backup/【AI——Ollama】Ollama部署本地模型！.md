@@ -23,7 +23,7 @@ cls
 ollamaSetup.exe  /dir=d:\ollama
 ```
 在弹出的安装界面中，点 Install 后， 等待完成
-**关闭原来的 CMD，打开一个新的 CMD，查看ollama是否安装成功**（以确保配置成功！不然模型将无法正常下载到d盘！
+**关闭原来的 CMD，打开一个新的 CMD，查看ollama是否安装成功**（以确保配置成功！不然模型将无法正常下载到d盘！）
 ```
 ollama -v
 ```
