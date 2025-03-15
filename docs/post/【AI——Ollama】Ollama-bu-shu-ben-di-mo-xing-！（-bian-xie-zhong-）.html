@@ -87,6 +87,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 官网地址：<a href="https://ollama.com/download" rel="nofollow">https://ollama.com/download</a></li>
 </ul>
 <hr>
+<h2>部署Ollama</h2>
 <ul>
 <li>在 d 盘创建 ollama 文件夹，把软件包放进去</li>
 <li>以管理员身份，打开CMD命令行窗口</li>
@@ -100,10 +101,11 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 <li>cls</li>
 <li>ollamaSetup.exe   /dir=d:\ollama<br>
 在弹出的安装界面中，点 Install 后， 等待完成<br>
-<strong>关闭原来的 CMD，打开一个新的 CMD，查看ollama是否安装成功</strong>（以确保配置成功！）</li>
+<strong>关闭原来的 CMD，打开一个新的 CMD，查看ollama是否安装成功</strong>（以确保配置成功！不然模型将无法正常下载到d盘！）</li>
 <li>ollama  -v</li>
 </ul>
 <hr>
+<h2>部署模型</h2>
 <p>下载、运行大模型<br>
 到官网搜索想要的大模型<br>
 <a href="https://ollama.com" rel="nofollow">https://ollama.com</a><br>
@@ -113,7 +115,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 回到 CMD 窗口，粘贴命令，修改命令</p>
 <ul>
 <li>原命令   ollama  run   deepseek-r1:1.5b</li>
-<li>新命令   ollama  pull  deepseek-r1:1.5b</li>
+<li>新命令   ollama  pull  deepseek-r1:1.5b（将模型下载到本地）</li>
 </ul>
 <blockquote>
 <p>(下载速度变慢，可以 ctrl+c 中断，过一会再执行 ollama pull deepseek-r1:1.5b, 将会接着上一次的进度进行拉取下载)</p>
@@ -136,8 +138,9 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 <li>在模型部署完后打开Chatbox，弹出中选择<strong>使用自己的 API Key 或本地模型</strong></li>
 <li>找到ollama API 并选择</li>
 <li>选择下载的模型并保存</li>
-<li>新建对话集合使用！</li>
-</ul></div>
+<li>新建对话并使用！</li>
+</ul>
+<h1>部署完成~~</h1></div>
 <div style="font-size:small;margin-top:8px;float:right;"></div>
 
 <button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
