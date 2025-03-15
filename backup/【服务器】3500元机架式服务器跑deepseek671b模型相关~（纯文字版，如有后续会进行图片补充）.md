@@ -1,4 +1,5 @@
 # 二手机架式服务器
+**此方案正在优化中！！仅作参考**
 > 很火的deepseek，时常难受的未响应~~想玩模型没硬件...就这样我的机架式服务器旅程开始了。
 # 硬件信息
 * CPU：[Intel 至强 Platinum 8259CL](https://www.xincanshu.com/cpu/Intel_Xeon_Platinum_8259CL/)
