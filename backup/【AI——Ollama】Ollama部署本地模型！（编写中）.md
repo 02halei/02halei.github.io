@@ -38,4 +38,13 @@ https://ollama.com
 /bye  表示结束对话，退出.   ctrl + d 也可以退出.
 ***
 ### ollama  -h   可以查看更多相关命令
+***
+# UI界面
+> 使用ChatBox软件，地址：https://chatboxai.app/zh
+* 在模型部署完后打开Chatbox，弹出中选择**使用自己的 API Key 或本地模型**
+* 找到ollama API 并选择
+* 选择下载的模型并保存
+* 新建对话集合使用！
+
+
 
