@@ -9,8 +9,9 @@
 祝贺！！在2025年新春之际！！
 后面我会做一些我的分享，包括这个博客的搭建教程（有手就行）！正如前文所说不要钱为什么不去看看，试试？？
 
+
+![Image](https://github.com/user-attachments/assets/cb78864e-1d72-458a-91e6-dafa09ad4a33)
  **哈雷0V0记录于2025.2.5**
 **02halei记录于2025.2.5**
      _02halei=哈雷0V0_
 _每篇博客不代表最终结果，如有缺漏都会进行不定期完善_
-![Image](https://github.com/user-attachments/assets/cb78864e-1d72-458a-91e6-dafa09ad4a33)
