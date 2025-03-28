@@ -10,10 +10,14 @@
         let theme = localStorage.getItem("meek_theme") || "light";
         document.documentElement.setAttribute("data-color-mode", theme);
     </script>
-<meta name="description" content="# 什么是Ollama？
+<meta name="description" content="
+# 前言
+## 什么是Ollama？
 > Ollama 是一款开源工具，专注于在本地计算机上简化大型语言模型（LLM）的部署与交互。">
 <meta property="og:title" content="【AI——Ollama】Ollama部署本地模型！">
-<meta property="og:description" content="# 什么是Ollama？
+<meta property="og:description" content="
+# 前言
+## 什么是Ollama？
 > Ollama 是一款开源工具，专注于在本地计算机上简化大型语言模型（LLM）的部署与交互。">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://02halei.github.io/post/%E3%80%90AI%E2%80%94%E2%80%94Ollama%E3%80%91Ollama-bu-shu-ben-di-mo-xing-%EF%BC%81.html">
@@ -85,13 +89,14 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 </div>
 </div>
     <div id="content">
-<div class="markdown-body" id="postBody"><h1>什么是Ollama？</h1>
+<div class="markdown-body" id="postBody"><h1>前言</h1>
+<h2>什么是Ollama？</h2>
 <blockquote>
 <p>Ollama 是一款开源工具，专注于在本地计算机上简化大型语言模型（LLM）的部署与交互。用户可通过命令行直接下载、运行和管理多种模型（如 Llama、Mistral 等），无需依赖云端服务，保障数据隐私。支持 macOS 和 Linux 系统，提供模型微调接口，便于开发者定制化应用。其轻量级架构优化了资源占用，降低硬件门槛，适合研究、实验及开发场景，助力用户高效探索 AI 文本生成、问答等任务，是本地化运行 LLM 的便捷解决方案。<br>
 <a href="https://www.bilibili.com/video/BV1QtNmeoEe3?vd_source=0957d3bb7550711acd815f905c37e537" rel="nofollow">其他参考视频</a><br>
 <strong>一款AI模型类软件，我们这里选用Ollama部署本地模型。</strong></p>
 </blockquote>
-<h1>基本设置</h1>
+<h1>部署设置</h1>
 <ul>
 <li>安装 Ollama 软件包<br>
 官网地址：<a href="https://ollama.com/download" rel="nofollow">https://ollama.com/download</a></li>
@@ -125,16 +130,8 @@ ollamaSetup.exe  /dir=d:\ollama
 <a href="https://ollama.com" rel="nofollow">https://ollama.com</a><br>
 或者点 models 菜单， 或者在搜索框中输入要搜索的名称<br>
 找到模型后，查看详情<br>
-选择想要的大小尺寸，复制右侧的命令<br>
-回到 CMD 窗口，粘贴命令，修改命令</p>
-<ul>
-<li>原命令</li>
-</ul>
-<pre class="notranslate"><code class="notranslate">ollama run deepseek-r1:1.5b
-</code></pre>
-<ul>
-<li>新命令</li>
-</ul>
+选择想要的大小尺寸，复制下方的命令<br>
+回到 CMD 窗口，粘贴命令</p>
 <pre class="notranslate"><code class="notranslate">ollama pull deepseek-r1:1.5b
 </code></pre>
 <p>（将模型下载到本地）</p>
@@ -142,7 +139,7 @@ ollamaSetup.exe  /dir=d:\ollama
 <p>(下载速度变慢，可以 ctrl+c 中断，过一会再执行 ollama pull deepseek-r1:1.5b, 将会接着上一次的进度进行拉取下载)</p>
 </blockquote>
 <hr>
-<h2>运行大模型</h2>
+<h1>运行大模型</h1>
 <pre class="notranslate"><code class="notranslate">ollama run deepseek-r1:1.5b
 </code></pre>
 <p>在 &gt;&gt;&gt; 后输入 你好， 即可聊天</p>
