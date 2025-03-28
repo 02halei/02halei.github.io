@@ -45,17 +45,19 @@ ollama pull deepseek-r1:1.5b
 > (下载速度变慢，可以 ctrl+c 中断，过一会再执行 ollama pull deepseek-r1:1.5b, 将会接着上一次的进度进行拉取下载)
 ***
 # 3.运行大模型
+复制粘贴代码运行deepseek1.5b的模型（7b或其他可自行更改“：”后内容）
 ```
 ollama run deepseek-r1:1.5b
 ```
 在 >>> 后输入 你好， 即可聊天
+> 如果用UI见面则在相应软件聊天
 
 结束对话，退出.  或 ctrl + d 退出.
 ```
 /bye
 ```  
 ***
-### 查看更多相关命令
+### 3.1.1查看更多相关命令
 ```
 ollama -h  
 ``` 
