@@ -57,7 +57,7 @@ ollama run deepseek-r1:1.5b
 /bye
 ```  
 ***
-### 3.1.1查看更多相关命令
+## 3.1查看更多相关命令
 ```
 ollama -h  
 ``` 
