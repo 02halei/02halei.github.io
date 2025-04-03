@@ -3,3 +3,6 @@
 
 # 视频参考
 `Gmeek-html<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=114209824179444&bvid=BV1hwXaYjEu2&cid=29022423843&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>`
+
+# 官网地址
+wallpaperplay.cn
