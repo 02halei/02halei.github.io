@@ -1,4 +1,5 @@
-# 出一期deepseek的本地部署教程
+#前言
+ **出一期deepseek的本地部署教程**
 > 软件使用：ollama
 > 系统：Windows
 ---
