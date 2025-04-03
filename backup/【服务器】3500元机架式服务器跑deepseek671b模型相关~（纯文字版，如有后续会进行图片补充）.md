@@ -9,6 +9,9 @@
 * DDR4 ECC 服务器内存2666MHz（两颗CPU共能上12根）
 > 因为CPU功耗为210W，主板供电205W，所以需要如视频解锁功耗墙！
 # [可参照视频](https://www.bilibili.com/video/BV1YEPvepEvf/?spm_id_from=333.337.search-card.all.click)
+
+`Gmeek-html<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=114063795427174&bvid=BV1YEPvepEvf&cid=28569963696&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>`
+
 ## 视频刷机包
 浪潮解锁大功率刷机板驱动以及刷机程序包：
 百度网盘
@@ -21,4 +24,4 @@ https://pan.baidu.com/s/1ZTUDP7e7YJT8pFWjq2HPow?pwd=dkqc
 * 刷机板以及线材 40元
 * 浪潮3008直通卡 80元
 
-`Gmeek-html<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=114063795427174&bvid=BV1YEPvepEvf&cid=28569963696&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>`
+
