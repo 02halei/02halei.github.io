@@ -20,3 +20,5 @@ https://pan.baidu.com/s/1ZTUDP7e7YJT8pFWjq2HPow?pwd=dkqc
 * 三星RECC DDR4 2666Mhz 16G 现价格83元每根x12 996元
 * 刷机板以及线材 40元
 * 浪潮3008直通卡 80元
+
+`Gmeek-html<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=114063795427174&bvid=BV1YEPvepEvf&cid=28569963696&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>`
