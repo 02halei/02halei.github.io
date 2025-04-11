@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html data-color-mode="light" data-dark-theme="dark" data-light-theme="light" lang="zh-CN">
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href='https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/Primer/21.0.7/primer.css' rel='stylesheet' />
+    
+    <link rel="icon" href="https://avatars.githubusercontent.com/u/119430179?v=4"><script>
+        let theme = localStorage.getItem("meek_theme") || "light";
+        document.documentElement.setAttribute("data-color-mode", theme);
+    </script>
+<meta name="description" content="# 前言
+
+> 关于运用`Github Pages`搭建`Hexo`博客的一些想法~
+
+* 这篇文章将讲述运用`Github Pages`功能搭建`Hexo`博客的基本方法
+
+* 内容包括详细的`Git`和`node`的下载和运用和`Github`的仓库上传
+
+* 不建议使用！第一次失误可能导致后续无法成功！成功后也或多或少有问题~但还是写出来大家可以试试~
+
+  ---
+
+# 开始搭建
+
+> 请按照教程一步一步进行！否则可能报错。">
+<meta property="og:title" content="【博客篇】Hexo博客搭建~">
+<meta property="og:description" content="# 前言
+
+> 关于运用`Github Pages`搭建`Hexo`博客的一些想法~
+
+* 这篇文章将讲述运用`Github Pages`功能搭建`Hexo`博客的基本方法
+
+* 内容包括详细的`Git`和`node`的下载和运用和`Github`的仓库上传
+
+* 不建议使用！第一次失误可能导致后续无法成功！成功后也或多或少有问题~但还是写出来大家可以试试~
+
+  ---
+
+# 开始搭建
+
+> 请按照教程一步一步进行！否则可能报错。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://02halei.github.io/post/%E3%80%90-bo-ke-pian-%E3%80%91Hexo-bo-ke-da-jian-~.html">
+<meta property="og:image" content="https://avatars.githubusercontent.com/u/119430179?v=4">
+<title>【博客篇】Hexo博客搭建~</title>
+<link href="//unpkg.com/@wooorm/starry-night@2.1.1/style/both.css" rel="stylesheet" />
+
+
+</head>
+<style>
+body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;padding: 45px;font-size: 16px;font-family: sans-serif;line-height: 1.25;}
+#header{display:flex;padding-bottom:8px;border-bottom: 1px solid var(--borderColor-muted, var(--color-border-muted));margin-bottom: 16px;}
+#footer {margin-top:64px; text-align: center;font-size: small;}
+
+</style>
+
+<style>
+.postTitle{margin: auto 0;font-size:40px;font-weight:bold;}
+.title-right{display:flex;margin:auto 0 0 auto;}
+.title-right .circle{padding: 14px 16px;margin-right:8px;}
+#postBody{border-bottom: 1px solid var(--color-border-default);padding-bottom:36px;}
+#postBody hr{height:2px;}
+#cmButton{height:48px;margin-top:48px;}
+#comments{margin-top:64px;}
+.g-emoji{font-size:24px;}
+@media (max-width: 600px) {
+    body {padding: 8px;}
+    .postTitle{font-size:24px;}
+}
+.copy-feedback {
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 50px;
+    color: var(--color-fg-on-emphasis);
+    background-color: var(--color-fg-muted);
+    border-radius: 3px;
+    padding: 5px 8px;
+    font-size: 12px;
+}
+</style>
+
+
+
+
+<body>
+    <div id="header">
+<h1 class="postTitle">【博客篇】Hexo博客搭建~</h1>
+<div class="title-right">
+    <a href="https://02halei.github.io" id="buttonHome" class="btn btn-invisible circle" title="首页">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathHome" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+    
+    <a href="https://github.com/02halei/02halei.github.io/issues/15" target="_blank" class="btn btn-invisible circle" title="Issue">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathIssue" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+    
+
+    <a class="btn btn-invisible circle" onclick="modeSwitch();" title="切换主题">
+        <svg class="octicon" width="16" height="16" >
+            <path id="themeSwitch" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+
+</div>
+</div>
+    <div id="content">
+<div class="markdown-body" id="postBody"><h1>前言</h1>
+<blockquote>
+<p>关于运用<code class="notranslate">Github Pages</code>搭建<code class="notranslate">Hexo</code>博客的一些想法~</p>
+</blockquote>
+<ul>
+<li>
+<p>这篇文章将讲述运用<code class="notranslate">Github Pages</code>功能搭建<code class="notranslate">Hexo</code>博客的基本方法</p>
+</li>
+<li>
+<p>内容包括详细的<code class="notranslate">Git</code>和<code class="notranslate">node</code>的下载和运用和<code class="notranslate">Github</code>的仓库上传</p>
+</li>
+<li>
+<p>不建议使用！第一次失误可能导致后续无法成功！成功后也或多或少有问题<del>但还是写出来大家可以试试</del></p>
+<hr>
+</li>
+</ul>
+<h1>开始搭建</h1>
+<blockquote>
+<p>请按照教程一步一步进行！否则可能报错。</p>
+</blockquote>
+<h2>准备工具</h2>
+<blockquote>
+<p>工具处保存路径其他均默认</p>
+<hr>
+</blockquote>
+<p><strong><a href="https://nodejs.org/en/" rel="nofollow">下载nodejs</a></strong></p>
+<hr>
+<p><strong><a href="https://git-scm.com/downloads" rel="nofollow">下载git</a></strong></p>
+<hr>
+<h2>测试下是否都下载成功</h2>
+<p>管理员运行cmd（在输入cmd后不确定，直接<code class="notranslate">Ctrl+Shift+Enter</code>即可），依次输入如下命令</p>
+<div class="highlight highlight-source-batchfile"><pre class="notranslate">node -v
+npm -v
+git -v</pre></div>
+<h2>下载hexo</h2>
+<blockquote>
+<p>依旧在<code class="notranslate">cmd</code>中进行</p>
+</blockquote>
+<div class="highlight highlight-source-batchfile"><pre class="notranslate">npm install hexo-cli -g</pre></div>
+<h2>搭建仓库</h2>
+<p>成功下载好工具之后，我们开始搭建GitHub存储静态页面的仓库</p>
+<p>首先注册/登入<a href="https://github.com/">Github</a></p>
+<p>点击<code class="notranslate">Create a new repository</code>进入新建仓库页面</p>
+<p>仓库名输入：用户名.github.io</p>
+<p>勾选 <code class="notranslate">Public</code></p>
+<p>勾选 <code class="notranslate">Add a README file</code></p>
+<p>拉到下面点击<code class="notranslate">create</code>创建</p>
+<h2>生成SSH Keys</h2>
+<p>进入任意文件夹，右键空白处然后点<code class="notranslate">Git bash here</code>,输入</p>
+<pre class="notranslate"><code class="notranslate">ssh-keygen -t rsa -C "邮件地址"
+</code></pre>
+<p>然后敲4次Enter⌨️</p>
+<p>然后进入C:\Users\用户名，在里面进入<code class="notranslate">.ssh</code>文件</p>
+<p>用记事本打开里面的<code class="notranslate">id_rsa.pub</code>,全选复制里面的代码</p>
+<h2>设置Github</h2>
+<p>打开Github</p>
+<p>进入用户设置，找到<code class="notranslate">SSH keys</code></p>
+<p>新建<code class="notranslate">SH keys</code>名称随意，在下面粘贴代码，</p>
+<p>然后创建<code class="notranslate">SSH keys</code></p>
+<h2>测试是否成功</h2>
+<p>在git bash中输入</p>
+<blockquote>
+<p>注意！这里要关闭加速器在输入代码！不然无法连接！</p>
+<p>只能回车一次不然将跳过<code class="notranslate">yes</code>导致无法连接!</p>
+</blockquote>
+<pre class="notranslate"><code class="notranslate">ssh -T git@github.com
+</code></pre>
+<p>回车，然后再输入<code class="notranslate">yes</code></p>
+<h2>本地生成博客内容</h2>
+<p>在喜欢位置新建文件Blog（可自定义文件名），然后进入文件夹</p>
+<p>右键空白处然后点<code class="notranslate">Git bash here</code>，输入Hexo初始化命令</p>
+<pre class="notranslate"><code class="notranslate">hexo init
+</code></pre>
+<blockquote>
+<p>如果‘command not find’，就在前面加上npx，如：<code class="notranslate">npx hexo init</code></p>
+</blockquote>
+<p>然后安装Hexo</p>
+<pre class="notranslate"><code class="notranslate">hexo install
+</code></pre>
+<p>接下来使Hexo生成</p>
+<pre class="notranslate"><code class="notranslate">hexo g
+</code></pre>
+<p>本地运行Hexo</p>
+<pre class="notranslate"><code class="notranslate">hexo s
+</code></pre>
+<p>（如果不成功的话就重复直到成功，因为国内与github连接不稳定）</p>
+<p>现在就可以复制生成的链接进入浏览器看到我们生成的本地服务器了</p>
+<p>然后回到命令行，<code class="notranslate">ctrl+c</code>关闭服务</p>
+<h2>上传博客</h2>
+<p>进入之前的Blog文件夹，用记事本打开<code class="notranslate">_config.yml</code></p>
+<p>拉到最下面将deploy后面的全删掉，复制粘贴这段</p>
+<pre class="notranslate"><code class="notranslate">  type: git
+  repository: 
+  branch: main
+</code></pre>
+<blockquote>
+<p>注意缩进格式：每行前面都有两个空格不要删，每个冒号后面都有个空格也不要删！首行缩进对齐！</p>
+</blockquote>
+<p>去github之前生成的仓库页面，点code，复制https链接</p>
+<p>将其粘贴到我们记事本中的<code class="notranslate">repository：</code>后面</p>
+<p>然后保存退出</p>
+<p><strong>回到博客文件夹，git bash</strong></p>
+<h2>安装自动部署发布工具</h2>
+<p>在Blog文件夹右键打开git bash，生成</p>
+<pre class="notranslate"><code class="notranslate">hexo g
+</code></pre>
+<p>上传</p>
+<pre class="notranslate"><code class="notranslate">hexo d
+</code></pre>
+<blockquote>
+<p>如果是第一次使用git的话会需要配置，不然会报错</p>
+</blockquote>
+<pre class="notranslate"><code class="notranslate">git config --global user.email "你的邮箱"
+</code></pre>
+<pre class="notranslate"><code class="notranslate">git config --global user.name "你的名字"
+</code></pre>
+<p>配置完后再<code class="notranslate">hexo d</code>上传</p>
+<p>在跳出来的窗口内进行登录（不要乱点，不然错过了很麻烦）</p>
+<p>运行后我们就成功把本地内容上传到github了</p>
+<p>上传成功以后，我们就算搭建好了！上自己的网址看看吧</p>
+<p>网址是我们之前设的仓库名：用户名.github.io</p>
+<h1>网站基本设置</h1>
+<p>我们的博客标题还是默认的hexo，整个页面是初始默认的，接下来我们对其进行修改</p>
+<p>用记事本打开我们blog文件夹中的<code class="notranslate">_config.yml</code>文件</p>
+<p>将#Site下面按自己的需求填上</p>
+<pre class="notranslate"><code class="notranslate">## Site
+title: 标题
+subtitle: 副标题
+description: 描述
+keywords: 关键词
+author: 站主
+language: 语言（可以填写zh-CN）
+timezone: 时区（可以填写Asia/Shanghai）
+</code></pre>
+<p>记得保存</p>
+<h1>文章上传</h1>
+<p>我们在Blog文件夹中打开git bash,输入下方代码就可以生成新的文章md文件</p>
+<pre class="notranslate"><code class="notranslate">hexo new 文章标题
+</code></pre>
+<p>文章是.md格式，在我们的Blog文件夹中的<code class="notranslate">source/_posts</code>中</p>
+<p>推荐用Typora软件来编辑.md格式的文件</p>
+<blockquote>
+<p>Typora官网：<a href="https://www.typoraio.cn/%EF%BC%8889%E5%85%83%E7%BB%88%E8%BA%AB%E4%BD%BF%E7%94%A8%EF%BC%8C%E6%8E%A8%E8%8D%90%E6%AD%A3%E7%89%88%EF%BC%89" rel="nofollow">https://www.typoraio.cn/（89元终身使用，推荐正版）</a></p>
+<p>破解版奉上：<a href="https://kevinwu06.lanzout.com/iXkq30icv1ha" rel="nofollow">蓝奏云文件</a></p>
+</blockquote>
+<p>然后我们用Typora软件打开该.md文件就可以开始写文章了</p>
+<p>写好以后，我们还是一样打开git bash生成、上传</p>
+<pre class="notranslate"><code class="notranslate">hexo g
+hexo d
+</code></pre>
+<hr>
+<p>至此，我们就成功搭建好基本的博客了，剩下的就是对博客的一些优化和美化了。</p>
+<h1>博客主题</h1>
+<p>推荐主题：<a href="https://butterfly.js.org/posts/21cfbf15/" rel="nofollow">Butterfly</a>，<a href="http://docs.anheyu.com/" rel="nofollow">anzhiyu</a></p>
+<p>大家可以参阅主题文档进行安装配置</p>
+<hr>
+<h1>其他博主教程推荐</h1>
+<p><iframe src="//player.bilibili.com/player.html?isOutside=true&aid=1303633876&bvid=BV1Ju4m1c7WR&cid=1521925412&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe></p>
+<hr></div>
+<div style="font-size:small;margin-top:8px;float:right;">ヾ(≧▽≦*)o 转载请注明出处——哈雷0V0 </div>
+
+<button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
+<div class="comments" id="comments"></div>
+
+</div>
+    <div id="footer"><div id="footer1">Copyright © <span id="copyrightYear"></span> <a href="https://02halei.github.io">哈雷0V0的博客</a></div>
+<div id="footer2">
+    <span id="runday"></span><span>Powered by <a href="https://meekdai.com/Gmeek.html" target="_blank">Gmeek</a></span>
+</div>
+
+<script>
+var now=new Date();
+document.getElementById("copyrightYear").innerHTML=now.getFullYear();
+
+if("02/05/2025"!=""){
+    var startSite=new Date("02/05/2025");
+    var diff=now.getTime()-startSite.getTime();
+    var diffDay=Math.floor(diff/(1000*60*60*24));
+    document.getElementById("runday").innerHTML="网站运行"+diffDay+"天"+" • ";
+}
+</script></div>
+</body>
+<script>
+var IconList={'sun': 'M8 10.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5zM8 12a4 4 0 100-8 4 4 0 000 8zM8 0a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0V.75A.75.75 0 018 0zm0 13a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0v-1.5A.75.75 0 018 13zM2.343 2.343a.75.75 0 011.061 0l1.06 1.061a.75.75 0 01-1.06 1.06l-1.06-1.06a.75.75 0 010-1.06zm9.193 9.193a.75.75 0 011.06 0l1.061 1.06a.75.75 0 01-1.06 1.061l-1.061-1.06a.75.75 0 010-1.061zM16 8a.75.75 0 01-.75.75h-1.5a.75.75 0 010-1.5h1.5A.75.75 0 0116 8zM3 8a.75.75 0 01-.75.75H.75a.75.75 0 010-1.5h1.5A.75.75 0 013 8zm10.657-5.657a.75.75 0 010 1.061l-1.061 1.06a.75.75 0 11-1.06-1.06l1.06-1.06a.75.75 0 011.06 0zm-9.193 9.193a.75.75 0 010 1.06l-1.06 1.061a.75.75 0 11-1.061-1.06l1.06-1.061a.75.75 0 011.061 0z', 'moon': 'M9.598 1.591a.75.75 0 01.785-.175 7 7 0 11-8.967 8.967.75.75 0 01.961-.96 5.5 5.5 0 007.046-7.046.75.75 0 01.175-.786zm1.616 1.945a7 7 0 01-7.678 7.678 5.5 5.5 0 107.678-7.678z', 'sync': 'M1.705 8.005a.75.75 0 0 1 .834.656 5.5 5.5 0 0 0 9.592 2.97l-1.204-1.204a.25.25 0 0 1 .177-.427h3.646a.25.25 0 0 1 .25.25v3.646a.25.25 0 0 1-.427.177l-1.38-1.38A7.002 7.002 0 0 1 1.05 8.84a.75.75 0 0 1 .656-.834ZM8 2.5a5.487 5.487 0 0 0-4.131 1.869l1.204 1.204A.25.25 0 0 1 4.896 6H1.25A.25.25 0 0 1 1 5.75V2.104a.25.25 0 0 1 .427-.177l1.38 1.38A7.002 7.002 0 0 1 14.95 7.16a.75.75 0 0 1-1.49.178A5.5 5.5 0 0 0 8 2.5Z', 'home': 'M6.906.664a1.749 1.749 0 0 1 2.187 0l5.25 4.2c.415.332.657.835.657 1.367v7.019A1.75 1.75 0 0 1 13.25 15h-3.5a.75.75 0 0 1-.75-.75V9H7v5.25a.75.75 0 0 1-.75.75h-3.5A1.75 1.75 0 0 1 1 13.25V6.23c0-.531.242-1.034.657-1.366l5.25-4.2Zm1.25 1.171a.25.25 0 0 0-.312 0l-5.25 4.2a.25.25 0 0 0-.094.196v7.019c0 .138.112.25.25.25H5.5V8.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v5.25h2.75a.25.25 0 0 0 .25-.25V6.23a.25.25 0 0 0-.094-.195Z', 'github': 'M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z', 'copy': 'M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z', 'check': 'M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z'};
+var utterancesLoad=0;
+
+let themeSettings={
+    "dark": ["dark","moon","#00f0ff","dark-blue"],
+    "light": ["light","sun","#ff5000","github-light"],
+    "auto": ["auto","sync","","preferred-color-scheme"]
+};
+function changeTheme(mode, icon, color, utheme){
+    document.documentElement.setAttribute("data-color-mode",mode);
+    document.getElementById("themeSwitch").setAttribute("d",value=IconList[icon]);
+    document.getElementById("themeSwitch").parentNode.style.color=color;
+    if(utterancesLoad==1){utterancesTheme(utheme);}
+}
+function modeSwitch(){
+    let currentMode=document.documentElement.getAttribute('data-color-mode');
+    let newMode = currentMode === "light" ? "dark" : currentMode === "dark" ? "auto" : "light";
+    localStorage.setItem("meek_theme", newMode);
+    if(themeSettings[newMode]){
+        changeTheme(...themeSettings[newMode]);
+    }
+}
+function utterancesTheme(theme){
+    const message={type:'set-theme',theme: theme};
+    const iframe=document.getElementsByClassName('utterances-frame')[0];
+    iframe.contentWindow.postMessage(message,'https://utteranc.es');
+}
+if(themeSettings[theme]){changeTheme(...themeSettings[theme]);}
+console.log("\n %c Gmeek last https://github.com/Meekdai/Gmeek \n","padding:5px 0;background:#02d81d;color:#fff");
+</script>
+
+<script>
+document.getElementById("pathHome").setAttribute("d",IconList["home"]);
+document.getElementById("pathIssue").setAttribute("d",IconList["github"]);
+
+
+
+function openComments(){
+    cm=document.getElementById("comments");
+    cmButton=document.getElementById("cmButton");
+    cmButton.innerHTML="loading";
+    span=document.createElement("span");
+    span.setAttribute("class","AnimatedEllipsis");
+    cmButton.appendChild(span);
+
+    script=document.createElement("script");
+    script.setAttribute("src","https://utteranc.es/client.js");
+    script.setAttribute("repo","02halei/02halei.github.io");
+    script.setAttribute("issue-term","title");
+    
+    if(localStorage.getItem("meek_theme")=="dark"){script.setAttribute("theme","dark-blue");}
+    else if(localStorage.getItem("meek_theme")=="light") {script.setAttribute("theme","github-light");}
+    else{script.setAttribute("theme","preferred-color-scheme");}
+    
+    script.setAttribute("crossorigin","anonymous");
+    script.setAttribute("async","");
+    cm.appendChild(script);
+
+    int=self.setInterval("iFrameLoading()",200);
+}
+
+function iFrameLoading(){
+    var utterances=document.getElementsByClassName('utterances');
+    if(utterances.length==1){
+        if(utterances[0].style.height!=""){
+            utterancesLoad=1;
+            int=window.clearInterval(int);
+            document.getElementById("cmButton").style.display="none";
+            console.log("utterances Load OK");
+        }
+    }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    const createClipboardHTML = (codeContent, additionalClasses = '') => `
+        <pre class="notranslate"><code class="notranslate">${codeContent}</code></pre>
+        <div class="clipboard-container position-absolute right-0 top-0 ${additionalClasses}">
+            <clipboard-copy class="ClipboardButton btn m-2 p-0" role="button" style="display: inherit;">
+                <svg height="16" width="16" class="octicon octicon-copy m-2"><path d="${IconList["copy"]}"></path></svg>
+                <svg height="16" width="16" class="octicon octicon-check color-fg-success m-2 d-none"><path d="${IconList["check"]}"></path></svg>
+            </clipboard-copy>
+            <div class="copy-feedback">Copied!</div>
+        </div>
+    `;
+
+    const handleCodeElements = (selector = '') => {
+        document.querySelectorAll(selector).forEach(codeElement => {
+            const codeContent = codeElement.innerHTML;
+            const newStructure = document.createElement('div');
+            newStructure.className = 'snippet-clipboard-content position-relative overflow-auto';
+            newStructure.innerHTML = createClipboardHTML(codeContent);
+
+            const parentElement = codeElement.parentElement;
+            if (selector.includes('highlight')) {
+                parentElement.insertBefore(newStructure, codeElement.nextSibling);
+                parentElement.removeChild(codeElement);
+            } else {
+                parentElement.parentElement.replaceChild(newStructure, parentElement);
+            }
+        });
+    };
+
+    handleCodeElements('pre.notranslate > code.notranslate');
+    handleCodeElements('div.highlight > pre.notranslate');
+
+    let currentFeedback = null;
+    document.querySelectorAll('clipboard-copy').forEach(copyButton => {
+        copyButton.addEventListener('click', () => {
+            const codeContent = copyButton.closest('.snippet-clipboard-content').innerText;
+            const tempTextArea = document.createElement('textarea');
+            tempTextArea.value = codeContent;
+            document.body.appendChild(tempTextArea);
+            tempTextArea.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempTextArea);
+
+            const copyIcon = copyButton.querySelector('.octicon-copy');
+            const checkIcon = copyButton.querySelector('.octicon-check');
+            const copyFeedback = copyButton.nextElementSibling;
+
+            if (currentFeedback && currentFeedback !== copyFeedback) {currentFeedback.style.display = 'none';}
+            currentFeedback = copyFeedback;
+
+            copyIcon.classList.add('d-none');
+            checkIcon.classList.remove('d-none');
+            copyFeedback.style.display = 'block';
+            copyButton.style.borderColor = 'var(--color-success-fg)';
+
+            setTimeout(() => {
+                copyIcon.classList.remove('d-none');
+                checkIcon.classList.add('d-none');
+                copyFeedback.style.display = 'none';
+                copyButton.style.borderColor = '';
+            }, 2000);
+        });
+    });
+});
+
+</script>
+<script src='https://blog.meekdai.com/Gmeek/plugins/GmeekTOC.js'></script><script src='https://blog.meekdai.com/Gmeek/plugins/lightbox.js'></script>
+
+</html>

@@ -1,5 +1,19 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>哈雷0V0的博客</title><link>https://02halei.github.io</link><description>一个神秘的up主，带你打开新的世界!</description><copyright>哈雷0V0的博客</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/119430179?v=4</url><title>avatar</title><link>https://02halei.github.io</link></image><lastBuildDate>Thu, 03 Apr 2025 14:16:40 +0000</lastBuildDate><managingEditor>哈雷0V0的博客</managingEditor><ttl>60</ttl><webMaster>哈雷0V0的博客</webMaster><item><title>【软件——灵动桌面】免费平替Wallpaper Engine！</title><link>https://02halei.github.io/post/%E3%80%90-ruan-jian-%E2%80%94%E2%80%94-ling-dong-zhuo-mian-%E3%80%91-mian-fei-ping-ti-Wallpaper%20Engine%EF%BC%81.html</link><description># 前言
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>哈雷0V0的博客</title><link>https://02halei.github.io</link><description>一个神秘的up主，带你打开新的世界!</description><copyright>哈雷0V0的博客</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/119430179?v=4</url><title>avatar</title><link>https://02halei.github.io</link></image><lastBuildDate>Fri, 11 Apr 2025 16:40:04 +0000</lastBuildDate><managingEditor>哈雷0V0的博客</managingEditor><ttl>60</ttl><webMaster>哈雷0V0的博客</webMaster><item><title>【博客篇】Hexo博客搭建~</title><link>https://02halei.github.io/post/%E3%80%90-bo-ke-pian-%E3%80%91Hexo-bo-ke-da-jian-~.html</link><description># 前言
+
+&gt; 关于运用`Github Pages`搭建`Hexo`博客的一些想法~
+
+* 这篇文章将讲述运用`Github Pages`功能搭建`Hexo`博客的基本方法
+
+* 内容包括详细的`Git`和`node`的下载和运用和`Github`的仓库上传
+
+* 不建议使用！第一次失误可能导致后续无法成功！成功后也或多或少有问题~但还是写出来大家可以试试~
+
+  ---
+
+# 开始搭建
+
+&gt; 请按照教程一步一步进行！否则可能报错。</description><guid isPermaLink="true">https://02halei.github.io/post/%E3%80%90-bo-ke-pian-%E3%80%91Hexo-bo-ke-da-jian-~.html</guid><pubDate>Fri, 11 Apr 2025 16:39:43 +0000</pubDate></item><item><title>【软件——灵动桌面】免费平替Wallpaper Engine！</title><link>https://02halei.github.io/post/%E3%80%90-ruan-jian-%E2%80%94%E2%80%94-ling-dong-zhuo-mian-%E3%80%91-mian-fei-ping-ti-Wallpaper%20Engine%EF%BC%81.html</link><description># 前言
 &gt; 今天无意间发现了一款动态壁纸软件！免费！没有Wallpaper Engine的客官可以来试试~
 
 # 视频参考
