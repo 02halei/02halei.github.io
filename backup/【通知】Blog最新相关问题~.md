@@ -10,7 +10,7 @@
 
 **打开博客的仓库地址并在 `Code`中打开`.github/workflows`文件夹**
 
-我们更该Gmeek的workflows相关文件`[Gmeek.yml](https://github.com/02halei/02halei.github.io/blob/main/.github/workflows/Gmeek.yml)`
+我们更该Gmeek的workflows相关文件`Gmeek.yml`
 
 【示例如下】
 
