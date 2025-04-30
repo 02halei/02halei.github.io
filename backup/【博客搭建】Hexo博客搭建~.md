@@ -159,6 +159,9 @@ hexo s
 **回到博客文件夹，git bash**
 
 ## 安装自动部署发布工具
+```
+npm install hexo-deployer-git --save
+```
 
 在Blog文件夹右键打开git bash，生成
 
